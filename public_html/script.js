@@ -8,15 +8,18 @@
 $("document").ready(function(){
     
    $('#oneButton').bind('click', alertButtonClick);
-   $('#oneButton').bind('click', replaceWText);
-   $('#oneButton').bind('click', replaceWHtml);
+   $('#twoButton').bind('click', replaceWText);
+   $('#threeButton').bind('click', replaceWHtml);
+   $('#fourButton').bind('click', addAPara);
+   $('#fiveButton').bind('click', removeAPara);
     
    $(".hero").css("background-color", "yellow");
    $('p').css("color", "blue");
     
    $('replaceWHtml').bind('click', replaceWHtml);
    $('replaceWText').bind('click', replaceWText);
-   
+   $('addAPara').bind('click' addAPara);
+   $('removeAPara').bind('click' removeAPara);
    
 });
 
@@ -42,9 +45,17 @@ function mouseClick() {
 }
 
 function replaceWHtml() {
-    $('#h3Tag').html('<h6>Now I\'m an h6 </h6>');
+    $('#h3Tag').html('Milestone 4');
 }
 
 function replaceWText() {
     $('#h3Tag').text('<h6>Now I\'m an h6 </h6>');
+}
+
+function addApara() {
+    $('randPara').append('<p>Another Paragraph</p>');
+}
+
+function removeAPara() {
+    $('#randPara p:last' ).remove();
 }

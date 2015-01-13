@@ -7,25 +7,26 @@
 
 $("document").ready(function(){
     
-   $('#oneButton').bind('click', alertButtonClick);
+   /*$('#oneButton').bind('click', alertButtonClick);
    $('#twoButton').bind('click', replaceWText);
    $('#threeButton').bind('click', replaceWHtml);
    $('#fourButton').bind('click', addAPara);
-   $('#fiveButton').bind('click', removeAPara);
+   $('#fiveButton').bind('click', removeAPara);*/
     
    $(".hero").css("background-color", "yellow");
    $('p').css("color", "blue");
-    
-   $('replaceWHtml').bind('click', replaceWHtml);
-   $('replaceWText').bind('click', replaceWText);
-   $('addAPara').bind('click' addAPara);
-   $('removeAPara').bind('click' removeAPara);
+   
+   $('#oneButton').bind('click', alertButtonClick);
+   $('#twoButton').bind('click', replaceWHtml);
+   $('#threeButton').bind('click', replaceWText);
+   $('#fourButton').bind('click', addAPara);
+   $('#fiveButton').bind('click', removeAPara);
    
 });
 
-$("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
-
-$('h1').bind('click', mouseClick);
+//$("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+//
+//$('h1').bind('click', mouseClick);
 
 
 function alertButtonClick() {
@@ -49,11 +50,11 @@ function replaceWHtml() {
 }
 
 function replaceWText() {
-    $('#h3Tag').text('<h6>Now I\'m an h6 </h6>');
+    $('#h3Tag').text('Replaced with html');
 }
 
-function addApara() {
-    $('randPara').append('<p>Another Paragraph</p>');
+function addAPara() {
+    $('#randPara').append('<p>Added text for Milestone 4</p>');
 }
 
 function removeAPara() {

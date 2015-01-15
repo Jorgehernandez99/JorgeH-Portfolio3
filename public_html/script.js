@@ -26,6 +26,11 @@ $("document").ready(function(){
    
    $('#show').bind('click', showThePage);
    
+   $('#superHumans').accordion({header: "h4"});
+   //$$('#superHumans').css('width', '400px');//
+   
+   $('h4').css('background', 'cyan');
+   
 });
 
 //$("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
